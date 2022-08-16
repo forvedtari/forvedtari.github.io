@@ -115,14 +115,16 @@ i:hover {
         z-index: 9998;
         border: 0;
         font-size: 24px;
-        transition: all 0.4s;
-        outline: none !important;
+        
+        outline: none;
         background-color: #149ddd;
         color: #fff;
         float: right;
         width: 40px;
         height: 40px;
         display:none;
+    
+    
         align-items: center;
         justify-content: center;
         line-height: 0;
@@ -136,7 +138,7 @@ section{
     padding: 60px 0;
     overflow: hidden;
 }
-.d-hero{
+.flex-hero{
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -245,41 +247,61 @@ h3{
     
 }
 /*=========================Skills====================*/
-.skills .progresbar{
-    height: 60px;
-    width: 100%;
-}
-.skills .skill{
-    margin: 0,0,6px,10px;
-    font-weight: 600;
-}
-.d-progressbar{
-    background: #dce8f8;
-    height: 10px;
-}
+.progress-container{
+    display:flex;
+    
 
-.skills .bar{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow: hidden;
-    color: #fff;
-    text-align: center;
-    white-space: nowrap;
+}
+.col-left{
+    width:100%;
+    height:auto;
+    padding:4px;
+
+}
+.col-right{
+    
+    padding: 5px;
+    width: 100%;
+     position: relative;
+}
+.skill{
+    margin-bottom: 10px;
+}
+.sk-percent{
+    float:right;
+    font-style: italic;
+    color: #040b14;
+}
+.skill .bar{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background-color: #999;
+    
+}
+.skill .bar span{
+    width:50%;
+    height: 100%;
+    position:absolute;
     background-color: #149ddd;
 }
-.bar{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow: hidden;
-    
-    text-align: center;
-    white-space: nowrap;
-    
-   
+.skill .bar .html{
+    width:60%;
+
 }
-/*==========================================skills===========================*/
+.skill .bar .css{
+    width:60%;
+
+}
+.skill .bar .java{
+    width:60%;
+
+}
+.skill .bar .pshop{
+    width:50%;
+
+}
+/*==========================================resume===========================*/
 .Resume em{
     margin-left: 10px;
 }
@@ -538,6 +560,9 @@ form .but-container{
     }
     .passport-pic{
         margin: 8px 40px;
+    }
+    .progress-container{
+        flex-wrap: wrap;
     }
 
 }
