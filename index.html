@@ -15,7 +15,7 @@
 <body>
     <div class="menu-button">
     <div class="menu-toggel">
-    <i class="fa-solid fa-bars fa-3x" class="toggel_button"></i>
+    <i class="fa-solid fa-bars fa-3x toggel_button"></i>
     </div>
     </div>
     <header id="header" class="header">
@@ -34,7 +34,7 @@
             <nav id="nav-bar" class="nav-menu">
                 <ul>
                     <li>
-                        <a href="#hero"><i class="fa-solid fa-house"></i><span>Home</span></a>
+                        <a href="#hero"><i class="fa-solid fa-house is-active"></i><span>Home</span></a>
                     </li>
                     <li>
                         <a href="#about"><i class="fa-solid fa-user"></i><span>About</span></a>
@@ -54,7 +54,7 @@
         
 
     </header>
-    <section id="hero" class="d-hero">
+    <section id="hero" class="flex-hero">
      
         <div class="hero-section">
             <h1><strong>Vedanti Tari</strong></h1>
@@ -72,14 +72,14 @@
                     <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
                 </div>
                 <div class="row">
-                    <div class="col-4">
-                        <img src="C:\Users\ZMO-WIN-VedantiT-01\Downloads\VEDANTI_GAJANAN\icon.png" class="about-image">
+                    <div class="col">
+                        <img src="profile.png" class="about-image">
                     </div>
                     <div class="col-8" style="padding:15px">
                         <h3>UI/UX Designer & Web Developer.</h3>
                         <p></p>
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col">
                                 <ul>
                                     <li style="list-style-type: none;">
                                         <i class="fa-solid fa-angle-right" style="color: rgb(80, 172, 247);"></i>
@@ -103,7 +103,7 @@
                                     </li>
                                 </ul>
                                 </div>
-                                <div class="col-6">
+                                <div class="col">
                                     <ul>
                                         <li style="list-style-type: none;">
                                             <i class="fa-solid fa-angle-right" style="color: rgb(80, 172, 247);"></i>
@@ -145,7 +145,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod vel optio est excepturi neque, ipsa quo id. Totam minus blanditiis, beatae officiis maxime inventore error ad, rem porro eius ipsa.</p>
                 </div>
                 <div class="row">
-                    <div class="col-6 " id="fact-col" >
+                    <div class="col " id="fact-col" >
 
                         <div class="fact-box" style="padding: 30px;">
                             <i class="fa-solid fa-face-smile fa-3x" ></i>
@@ -156,7 +156,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-6 " id="fact-col" >
+                    <div class="col " id="fact-col" >
                         
                         <div class="fact-box" style="padding: 30px;">
                             <i class="fa-solid fa-file-lines fa-3x"></i>
@@ -167,7 +167,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-6" id="fact-col" >
+                    <div class="col" id="fact-col" >
                         
                         <div class="fact-box" style="padding: 30px;">
                             <i class="fa-solid fa-headset fa-3x" ></i>
@@ -178,7 +178,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-6 " id="fact-col" >
+                    <div class="col " id="fact-col" >
                         
                         <div class="fact-box" style="padding: 30px;">
                             <i class="fa-solid fa-user-group fa-3x" ></i>
@@ -200,64 +200,49 @@
                     </h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod vel optio est excepturi neque, ipsa quo id. Totam minus blanditiis, beatae officiis maxime inventore error ad, rem porro eius ipsa.</p>
                 </div>
-                <div class="skills-row">
-                    <div class="col-6">
-                        <div class="progresbar">
-                         <span class="skill">
+                <div class="progress-container">
+                    <div class="col-left">
+                        <div class="skill">
+                         <span>
                             Html
-                            <i class="sk-percent" style="float:right">100%</i>
+                            <i class="sk-percent">60%</i>
                          </span>
-                         <div class="d-progressbar">
-                            <div class="bar"  style="width: 100%;"></div>
-                         </div>
+                        <div class="bar" >
+                            <span class="html"></span>
                         </div>
-                        <div class="progresbar">
-                            <span class="skill">
-                               Html
-                               <i class="sk-percent" style="float:right">100%</i>
-                            </span>
-                            <div class="d-progressbar">
-                               <div class="bar"  style="width: 100%;"></div>
-                            </div>
-                           </div>
-                           <div class="progresbar">
-                            <span class="skill">
+                        </div>
+                        
+                        <div class="skill">
+                            <span>
                                CSS
-                               <i class="sk-percent" style="float:right">80%</i>
+                               <i class="sk-percent">60%</i>
                             </span>
-                            <div class="d-progressbar">
-                               <div class="bar"  style="width: 100%;"></div>
-                            </div>
+                           <div class="bar" >
+                               <span class="css"></span>
+                           </div>
                            </div>
                     </div>
-                    <div class="col-6">
-                        <div class="progresbar">
-                         <span class="skill">
-                            Java
-                            <i class="sk-percent" style="float:right">50%</i>
-                         </span>
-                         <div class="d-progressbar">
-                            <div class="bar"  style="width: 100%;"></div>
-                         </div>
-                        </div>
-                        <div class="progresbar">
-                            <span class="skill">
-                               Javascript
-                               <i class="sk-percent" style="float:right">70%</i>
+                    <div class="col-right">
+                        <div class="skill">
+                            <span>
+                               JAVASCRIPT
+                               <i class="sk-percent">60%</i>
                             </span>
-                            <div class="d-progressbar">
-                               <div class="bar"  style="width: 100%;"></div>
-                            </div>
+                           <div class="bar" >
+                               <span class="java"></span>
                            </div>
-                           <div class="progresbar">
-                            <span class="skill">
+                           </div>
+
+                           <div class="skill">
+                            <span>
                                PHOTOSHOP
-                               <i class="sk-percent" style="float:right">100%</i>
+                               <i class="sk-percent">50%</i>
                             </span>
-                            <div class="d-progressbar">
-                               <div class="bar"  style="width: 100%;"></div>
-                            </div>
+                           <div class="bar" >
+                               <span class="pshop"></span>
                            </div>
+                           </div>
+                       
                     </div>
                 </div>
             </div>
@@ -272,7 +257,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod vel optio est excepturi neque, ipsa quo id. Totam minus blanditiis, beatae officiis maxime inventore error ad, rem porro eius ipsa.</p>
                 </div>
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col">
                         
                         <h3>Summary</h3>
                         <div class="resume-content">
@@ -311,7 +296,7 @@
                         </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col">
                         
                         <h3>Summary</h3>
                         <div class="resume-content">
@@ -370,7 +355,7 @@
                     
                     </div>
                     <div class="image">
-                    <img src="landscape3.jpg" class="image__img">
+                    <img src="landscape4.jpg" class="image__img">
                     <div class="overlay__img"><i class="fa-solid fa-plus"></i><i class="fa-solid fa-link"></i></div>
                     
                     </div>
@@ -466,7 +451,7 @@
                                     </div>
                                     <div class="text-before"><i class="fa-solid fa-quote-right fa-2x" style="float: right;"></i></div>
                                     </div> 
-                                    <div class="avatar"><img src="testimonial-pic2.jpg" alt=""></div>
+                                    <div class="avatar"><img src="testimonial-pic1.jpg" alt=""></div>
                                     </div>
                                     
                                 </div>
@@ -481,7 +466,7 @@
                                     </div>
                                     <div class="text-before"><i class="fa-solid fa-quote-right fa-2x" style="float: right;"></i></div>
                                     </div> 
-                                    <div class="avatar"><img src="testimonial-pic1.jpg" alt=""></div>
+                                    <div class="avatar"><img src="testimonial-pic2.jpg" alt=""></div>
                                     </div>
                                     
                                 </div>
@@ -590,6 +575,8 @@
         var header = document.querySelector('.header');
 
         menu_toggel.addEventListener('click',()=>{
+            
+            header.classList.add("is-active");
 
         })
 
