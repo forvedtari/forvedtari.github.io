@@ -1,0 +1,546 @@
+*{
+    box-sizing: border-box;
+}
+
+#header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;    
+    padding: 0 15px;
+    background: #040b14;
+}
+
+ ::before,::after{
+    box-sizing: border-box;
+ }
+.passport-pic{
+    height: 120px;
+    width: 120px;
+    border-radius:50%;
+    border: 5px solid black;
+    vertical-align: middle;
+    margin: 8px 75px;
+}
+h1{
+  color: aliceblue;
+  text-decoration: none;
+  text-align: center;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+
+}
+#nav-bar{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0 0 0;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+.nav-menu i{
+  padding-right: 8px ;
+  margin-right: 8px;;
+
+}
+a{
+    cursor:pointer;
+    color: rgb(186, 175, 175);
+    text-decoration: none;
+    padding: 12px 15px;
+    display: flex;
+    align-items: center;
+
+} 
+
+i{
+    cursor:pointer;
+    color: rgb(243, 231, 231);
+    text-decoration: none;
+    margin: 0px 8px 0px 0px;
+
+
+}
+a:hover{
+    cursor:pointer;
+    color: rgb(243, 231, 231);
+    text-decoration: none;
+    padding: 12px 15px;
+
+}
+i:hover {
+    cursor:pointer;
+    color: rgb(68, 172, 242);
+    text-decoration: none;
+    
+
+}
+#social-links{
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.social-links a{
+    box-sizing: border-box;
+    font-size: 18px;
+    display: inline;
+    background: #212431;
+    color: #fff;
+    margin-top: 1rem;
+    padding: 6px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 25px;
+
+    
+}
+.menu-button{
+    display: flex;
+    justify-content: flex-end;
+}
+.menu-toggel i{
+        position: fixed;
+       
+        right: 15px;
+        top: 15px;
+        z-index: 9998;
+        border: 0;
+        font-size: 24px;
+        transition: all 0.4s;
+        outline: none !important;
+        background-color: #149ddd;
+        color: #fff;
+        float: right;
+        width: 40px;
+        height: 40px;
+        display:none;
+        align-items: center;
+        justify-content: center;
+        line-height: 0;
+        border-radius: 50px;
+        cursor: pointer
+
+}
+
+div{display: block;}
+section{
+    padding: 60px 0;
+    overflow: hidden;
+}
+.d-hero{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+#hero{
+    
+    width: 100%;
+    height:100vh;
+    background: url("C:\\Users\\ZMO-WIN-VedantiT-01\\Downloads\\wallpaper.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+/*#hero::before{
+    content: "";
+    background: rgba(5, 13, 24, 0.3);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}*/
+#main{
+    margin-left: 300px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+}
+.section-title h2 {
+    color:#173b6c;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+
+}
+.section-title h2::after{
+    content:" ";
+    background: #149ddd;
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    bottom: 0px;
+    left: 0px;
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.about-image{
+     width: 100%;
+     height:auto;
+     vertical-align: middle;
+
+}
+
+h3{ 
+    padding-left: 40px;
+    color:#173b6c;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.pt-lg-0{
+   padding-top: 0px;
+}
+#about .container ul li {
+   padding: 0%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+#about strong{
+    font-weight: bolder;
+    margin-right: 5px;
+}
+
+#fact-col{
+    display: flex;
+    
+}
+#facts-col .fact-box {
+    padding: 30px;
+    width: 100%;
+}
+.facts .fact-box span{
+    font-size: 50px;
+    font-weight: 700;
+    color: #050d18;
+    
+}
+.facts .fact-box p{
+    color: #050d18;
+    font-size: 14px;
+    padding-top: 15px;
+    margin:0 0 0 60px
+    
+}
+/*=========================Skills====================*/
+.skills .progresbar{
+    height: 60px;
+    width: 100%;
+}
+.skills .skill{
+    margin: 0,0,6px,10px;
+    font-weight: 600;
+}
+.d-progressbar{
+    background: #dce8f8;
+    height: 10px;
+}
+
+.skills .bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #149ddd;
+}
+.bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    
+    text-align: center;
+    white-space: nowrap;
+    
+   
+}
+/*==========================================skills===========================*/
+.Resume em{
+    margin-left: 10px;
+}
+.res-act{
+    margin-left: 14px;
+    border-left: 4px solid rgb(64, 145, 238);
+}
+.res-act p{
+    margin-top: 1px;
+}
+.Resume span{
+    font-size: 20px;
+}
+.Resume li{
+    padding: 0 0 10px 0;
+}
+.Resume .year{
+    width: 80px;
+    height:25px;
+    margin-left: 20px;
+    background-color: rgb(154, 180, 184);
+    font-size: 15px;
+    text-align: center;
+}
+/*====================================Portfolio=======================*/
+.portfolio ul {
+    list-style-type:none;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: nowrap;
+    background-color: rgb(251, 242, 242);
+    border-radius: 8px;
+    box-shadow: 0 2px,3px,0;
+}
+.portfolio li{
+    margin-right: 10px;
+    color: #040b14;
+}
+.portfolio-bar{
+    display: flex;
+    justify-content: center;
+}
+.portfolio a:hover{
+    color: #149ddd;
+}
+.portfolio .portfolio-image-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.portfolio .portfolio-image-container .image__img{
+    display: block;
+    width :400px;
+    height:260px;
+    
+}
+.overlay__img{
+    position: absolute;
+    left:0;
+    bottom:0;
+    width:400px;
+    height:40px;
+    background: rgba(115, 204, 242, 0.6);
+    color:#f1f1f1;
+    padding:10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    opacity: 0;
+}
+.overlay__img:hover{
+    opacity:1;
+}
+  
+.image{
+    position: relative;
+    margin: 20px;
+    padding: 10px;
+}
+
+
+/*====================================================services================*/
+.services .service-items .service-box{
+    width:300px;
+    height: 200px;
+    padding-left: 25px;
+    padding-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.services i{
+    background-color: rgb(39, 144, 237);
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    float: left;
+}
+.services .service-items .service-box h4{
+    font-size: 20px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+.service-items{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.service-box .s-description{
+    padding-left: 60px;
+    margin-top: 10px;
+}   
+/*==================================testimonial======================================*/
+
+
+.testimonial-item{
+    transition: all .3s ease-in-out;
+    transform: scale(0.9);
+    opacity: 0.9;
+    
+}
+.avatar{
+    display: flex;
+    justify-content: center;
+    
+}
+.testimonial-box {
+    padding: 75px 50px 75px;
+    overflow:hidden;
+    width: 300px;
+    background: #f5f6fa;
+    border: 1px solid #f1f1f1;
+    border-radius :10px;
+    text-align: center;
+}
+.text-before i{
+    color: #75c0e3;
+}
+.text-before i:hover{
+    color: #75c0e3;
+}
+.testimonials-carousel .swipper-slide{
+    padding: 30px 0;
+
+}
+.avatar{
+    position: absolute;
+    left: 50%;
+    margin-left: -45px;
+
+}
+.avatar img{
+    width: 90px;
+    height:90px;
+    border-radius: 100%;
+    box-shadow: 0 9px 26px rgba(58,87,135,0.1);
+}
+.swipper-wrap{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/*==================================contact===========================================*/
+.contact .contact-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact .card{
+    margin-right: 30px;
+    margin-top: 10px;
+    box-shadow: 0 0 5px 0 rgb(136, 132, 132);
+    padding: 20px;
+    border-radius: 5px
+}
+.contact i{
+    background-color: rgb(39, 144, 237);
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    float: left;
+}
+.contact .card h4{
+    font-size: 20px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+.contact .card .c-description{
+    padding-left: 60px;
+    margin-top: 10px;
+}
+.form-group{
+    width:100%;
+    margin-top: 20px;
+    font-size: 20px;
+
+}
+.form-group  input, .form-group textarea{
+    width: 100%;
+    padding:5px;
+    font-size: 10px;
+    border:2px solid rgb(136, 132, 132,0.199);
+    margin-top: 4px;
+}
+form .but{
+    
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 20px;
+    border-radius:10px;
+    background-color: rgb(86, 151, 229);
+    margin-top: 5px;
+
+    display: flex;
+    justify-content: center;
+
+}
+form .but-container{
+    display: flex;
+    justify-content: center;
+}
+
+
+/*==============================================================responsive header======================================*/
+
+@media(max-width :1024px){
+    .header{
+        max-width: 300px;
+        display: none;
+
+    }
+    .menu-button{
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .menu-toggel i{
+        
+        display:inline-flex;
+        
+    }
+    /*.row{
+        flex-wrap: nowrap;
+    }*/
+    #main{
+        margin-left: 30px;
+    }
+    .passport-pic{
+        margin: 8px 40px;
+    }
+
+}
+
+
+
