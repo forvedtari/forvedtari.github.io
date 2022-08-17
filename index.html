@@ -1,4 +1,3 @@
-# forvedtari.github.io
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="portfolio.css">
+    <link
+      rel="stylesheet"
+      href="css/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.css" />
 
     <title>Portfolio</title>
@@ -15,7 +18,7 @@
 <body>
     <div class="menu-button">
     <div class="menu-toggel">
-    <i class="fa-solid fa-bars fa-3x toggel_button"></i>
+    <i class="fa-solid fa-bars fa-3x toggel_button" onclick="myfunction()" ></i>
     </div>
     </div>
     <header id="header" class="header">
@@ -54,7 +57,7 @@
         
 
     </header>
-    <section id="hero" class="flex-hero">
+    <section id="hero" class="d-hero">
      
         <div class="hero-section">
             <h1><strong>Vedanti Tari</strong></h1>
@@ -72,14 +75,14 @@
                     <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
                 </div>
                 <div class="row">
-                    <div class="col">
+                    <div class="col-4">
                         <img src="icon.png" class="about-image">
                     </div>
-                    <div class="col-8" style="padding:15px">
+                    <div class="col-8" >
                         <h3>UI/UX Designer & Web Developer.</h3>
-                        <p></p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eos laudantium vitae iure totam explicabo, eius saepe fugiat ipsa obcaecati! Neque alias molestias voluptate facere ab repudiandae eos blanditiis repellat!</p>
                         <div class="row">
-                            <div class="col">
+                            <div class="col-6">
                                 <ul>
                                     <li style="list-style-type: none;">
                                         <i class="fa-solid fa-angle-right" style="color: rgb(80, 172, 247);"></i>
@@ -102,8 +105,8 @@
                                         <span>Marcela</span>
                                     </li>
                                 </ul>
-                                </div>
-                                <div class="col">
+                            </div>
+                            <div class="col-6">
                                     <ul>
                                         <li style="list-style-type: none;">
                                             <i class="fa-solid fa-angle-right" style="color: rgb(80, 172, 247);"></i>
@@ -129,6 +132,7 @@
                                     </ul>
                                     
                             </div>
+                            
                         </div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
@@ -145,10 +149,10 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod vel optio est excepturi neque, ipsa quo id. Totam minus blanditiis, beatae officiis maxime inventore error ad, rem porro eius ipsa.</p>
                 </div>
                 <div class="row">
-                    <div class="col " id="fact-col" >
+                    <div class="col-6 " id="fact-col" >
 
                         <div class="fact-box" style="padding: 30px;">
-                            <i class="fa-solid fa-face-smile fa-3x" ></i>
+                            <i class="fa-solid fa-face-smile fa-4x" ></i>
                             <span>232</span>
                             <p>
                                 <strong>Happy Clients</strong><br>
@@ -156,21 +160,22 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col " id="fact-col" >
+                    <div class="col-6 " id="fact-col" >
                         
                         <div class="fact-box" style="padding: 30px;">
-                            <i class="fa-solid fa-file-lines fa-3x"></i>
+                            <i class="fa-solid fa-file-lines fa-4x"></i>
                             <span>521</span>
+
                             <p>
                                 <strong>Projects</strong><br>
                                 adipisicing quas
                             </p>
                         </div>
                     </div>
-                    <div class="col" id="fact-col" >
+                    <div class="col-6" id="fact-col" >
                         
                         <div class="fact-box" style="padding: 30px;">
-                            <i class="fa-solid fa-headset fa-3x" ></i>
+                            <i class="fa-solid fa-headset fa-4x" ></i>
                             <span>1453</span>
                             <p>
                                 <strong>Hour of Support</strong><br>
@@ -178,10 +183,10 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col " id="fact-col" >
+                    <div class="col-6 " id="fact-col" >
                         
                         <div class="fact-box" style="padding: 30px;">
-                            <i class="fa-solid fa-user-group fa-3x" ></i>
+                            <i class="fa-solid fa-user-group fa-4x" ></i>
                             <span>32</span>
                             <p>
                                 <strong>Hard Workers</strong><br>
@@ -257,11 +262,11 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod vel optio est excepturi neque, ipsa quo id. Totam minus blanditiis, beatae officiis maxime inventore error ad, rem porro eius ipsa.</p>
                 </div>
                 <div class="row">
-                    <div class="col">
+                    <div class="col-6">
                         
                         <h3>Summary</h3>
                         <div class="resume-content">
-                            <i class="fa-solid fa-circle-notch fa-2x" style="color: rgb(61, 128, 243)"></i>
+                            <i class="fa-solid fa-circle " ></i>
                             <span>Vedanti Tari</span>
                             <div class="res-act">
                             <p >
@@ -278,7 +283,7 @@
                         </div>
                         <h3>Education</h3>
                         <div class="resume-content">
-                            <i class="fa-solid fa-circle-notch fa-2x" style="color: rgb(61, 128, 243)"></i>
+                            <i class="fa-solid fa-circle" ></i>
                             <span>B.Sc in Computer Science</span>
                             <div class="res-act">
                            
@@ -296,12 +301,12 @@
                         </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-lg-6">
                         
-                        <h3>Summary</h3>
+                        <h3>Professional Experience</h3>
                         <div class="resume-content">
-                            <i class="fa-solid fa-circle-notch fa-2x" style="color: rgb(61, 128, 243)"></i>
-                            <span>Vedanti Tari</span>
+                            <i class="fa-solid fa-circle" ></i>
+                            <span>Trainee</span>
                             <div class="res-act">
                             <p >
                                 <br>
@@ -359,6 +364,16 @@
                     <div class="overlay__img"><i class="fa-solid fa-plus"></i><i class="fa-solid fa-link"></i></div>
                     
                     </div>
+                    <div class="image">
+                        <img src="landscape1.jpg" class="image__img">
+                        <div class="overlay__img"><i class="fa-solid fa-plus"></i><i class="fa-solid fa-link"></i></div>
+                        
+                        </div>
+                        <div class="image">
+                            <img src="landscape2.jpg" class="image__img">
+                            <div class="overlay__img"><i class="fa-solid fa-plus"></i><i class="fa-solid fa-link"></i></div>
+                            
+                            </div>
 
                 </div>
                 </div>
@@ -375,58 +390,70 @@
                 <div class="service-items">
                     <div class="service-box" >
                         <i class="fa-solid fa-briefcase fa-2x "></i>
+                        <div class="serv-text">
                         <h4>LOREM IPSEN</h4>
                         <p class="s-description">
                                 
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate corrupti vel eveniet fugit enim .
                         </p>
+                       </div>
                     </div>
                     
                     <div class="service-box">
                             <i class="fa-solid fa-list-check fa-2x"></i>
+                            <div class="serv-text">
                             <h4>DOLORA SITEMA</h4>
                             <p class="s-description">
                                 
                                 adipisicing quas
                             </p>
                         </div>
+                        </div>
                     <div class="service-box">
                             <i class="fa-solid fa-chart-simple fa-2x"></i>
+                            <div class="serv-text">
                             <h4>SED UT</h4>
                             <p class="s-description">
                                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu
                             </p>
+                            </div>
                         </div>
                     
                     <div class="service-box">
                             <i class="fa-solid fa-binoculars fa-2x"></i>
+                            <div class="serv-text">
                             <h4>MAGNI DOLORES</h4>
                             <p class="s-description">
                                 
                                 consectetur que
                             </p>
+                            </div>
                         </div>
                         <div class="service-box">
                             <i class="fa-solid fa-sun fa-2x"></i>
+                            <div class="serv-text">
                             <h4>NEMO ENIM</h4>
                             <p class="s-description">
                                 
                                 consectetur que
                             </p>
+                            </div>
                         </div>
                         <div class="service-box">
                             <i class="fa-solid fa-calendar fa-2x"></i>
+                            <div class="serv-text">
                             <h4>EIUSMOD TEMPOR</h4>
                             <p class="s-description">
                                 Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligend
                             </p>
+                            </div>
                         </div>
                 </div>  
                 </div>
                 
                 </div >
                 
-           
+             
         </section>
         <section class="testimonials">
             <div class="container">
@@ -436,78 +463,89 @@
                     </h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam obcaecati perspiciatis quasi quaerat libero, perferendis aperiam distinctio fugiat ex quas recusandae ipsum molestias? In, ipsam recusandae quia error repellat voluptatibus.</p>
                 </div>
-                <div class="testimonials-carousal-wrap">
-                    <div class="testimonials-carousel">
-                        <div class="swipper-container">
-                            <div class="swipper-wrap">
-                                <div class="swipper-slide">
-                                    <div class="testimonial-item">
-                                     <div class="testimonial-box">  
-                                    <div class="text-before"><i class="fa-solid fa-quote-left fa-2x" style="float: left;"></i></div>
-                                    <div class="testimonial-text">
-                                        <p>
-                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                        </p>
-                                    </div>
-                                    <div class="text-before"><i class="fa-solid fa-quote-right fa-2x" style="float: right;"></i></div>
-                                    </div> 
-                                    <div class="avatar"><img src="testimonial-pic1.jpg" alt=""></div>
-                                    </div>
-                                    
-                                </div>
-                                <div class="swipper-slide">
-                                    <div class="testimonial-item">
-                                     <div class="testimonial-box">  
-                                    <div class="text-before"><i class="fa-solid fa-quote-left fa-2x" style="float: left;"></i></div>
-                                    <div class="testimonial-text">
-                                        <p>
-                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                        </p>
-                                    </div>
-                                    <div class="text-before"><i class="fa-solid fa-quote-right fa-2x" style="float: right;"></i></div>
-                                    </div> 
-                                    <div class="avatar"><img src="testimonial-pic2.jpg" alt=""></div>
-                                    </div>
-                                    
-                                </div>
-                                <div class="swipper-slide">
-                                    <div class="testimonial-item">
-                                     <div class="testimonial-box">  
-                                    <div class="text-before"><i class="fa-solid fa-quote-left fa-2x" style="float: left;"></i></div>
-                                    <div class="testimonial-text">
-                                        <p>
-                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                        </p>
-                                    </div>
-                                    <div class="text-before"><i class="fa-solid fa-quote-right fa-2x" style="float: right;"></i></div>
-                                    </div> 
-                                    <div class="avatar"><img src="testimonial-pic3.jpg" alt=""></div>
-                                    </div>
-                                    
-                                </div>
-                                <div class="swipper-slide">
-                                    <div class="testimonial-item">
-                                     <div class="testimonial-box">  
-                                    <div class="text-before"><i class="fa-solid fa-quote-left fa-2x" style="float: left;"></i></div>
-                                    <div class="testimonial-text">
-                                        <p>
-                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                        </p>
-                                    </div>
-                                    <div class="text-before"><i class="fa-solid fa-quote-right fa-2x" style="float: right;"></i></div>
-                                    </div> 
-                                    <div class="avatar"><img src="testimonial-pic1.jpg" alt=""></div>
-                                    </div>
-                                    
-                                </div>
-                                
+                <div class="testi-container">
+                <div class="testimonial mySwiper">
+                    <div class="testi-content swiper-wrapper">
+                        <div class="slide swiper-slide">
+                            <div class="back">
+                               <div class="quate-icon"><i class="fa-solid fa-quote-left fa-2x" style="float: left;"></i></div>
+                                   <p>
+                                       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                   </p>
+                               
+                               <div class="quate-icon"><i class="fa-solid fa-quote-right fa-2x" style="float: right;" ></i></div>
+                            </div>
+                               <div class="avatar"><img src="male.png" alt=""></div>
+                        </div> 
+                        <div class="slide swiper-slide">
+                            <div class="back">
+                               <div class="quate-icon"><i class="fa-solid fa-quote-left fa-2x" style="float: left;"></i></div>
+                                   <p>
+                                       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                   </p>
+                               
+                               <div class="quate-icon"><i class="fa-solid fa-quote-right fa-2x" style="float: right;" ></i></div>
+                            </div>
+                               <div class="avatar"><img src="testimonial-pic1.jpg" alt=""></div>
+                        </div> 
+                        <div class="slide swiper-slide">
+                            <div class="back">
+                               <div class="quate-icon"><i class="fa-solid fa-quote-left fa-2x" style="float: left;"></i></div>
+                                   <p>
+                                       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                   </p>
+                               
+                               <div class="quate-icon"><i class="fa-solid fa-quote-right fa-2x" style="float: right;" ></i></div>
+                            </div>
+                               <div class="avatar"><img src="testimonial-pic2.jpg" alt=""></div>
+                        </div> 
+                        <div class="slide swiper-slide">
+                            <div class="back">
+                               <div class="quate-icon"><i class="fa-solid fa-quote-left fa-2x" style="float: left;"></i></div>
+                                   <p>
+                                       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                   </p>
+                               
+                               <div class="quate-icon"><i class="fa-solid fa-quote-right fa-2x" style="float: right;" ></i></div>
+                            </div>
+                               <div class="avatar"><img src="testimonial-pic3.jpg" alt=""></div>
+                        </div> 
+                        <div class="slide swiper-slide">
+                            <div class="back">
+                               <div class="quate-icon"><i class="fa-solid fa-quote-left fa-2x" style="float: left;"></i></div>
+                                   <p>
+                                       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                   </p>
+                               
+                               <div class="quate-icon"><i class="fa-solid fa-quote-right fa-2x" style="float: right;" ></i></div>
+                            </div>
+                               <div class="avatar"><img src="testimonial-pic1.jpg" alt=""></div>
+                        </div> 
+                        <div class="slide swiper-slide">
+                            <div class="back">
+                               <div class="quate-icon"><i class="fa-solid fa-quote-left fa-2x" style="float: left;"></i></div>
+                                   <p>
+                                       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                   </p>
+                               
+                               <div class="quate-icon"><i class="fa-solid fa-quote-right fa-2x" style="float: right;" ></i></div>
+                            </div>
+                               <div class="avatar"><img src="testimonial-pic2.jpg" alt=""></div>
+                        </div> 
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+               </div>
+            </div>
+                        
+                    
+                
+                
                                
                                 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
 
         </section>
         <section class="contact">
@@ -569,8 +607,9 @@
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js"></script>
-    <script type="script.js"></script>
-    <script>
+    <script src="script.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-----<script>
         var menu_toggel = document.querySelector('.toggel_button');
         var header = document.querySelector('.header');
 
@@ -580,7 +619,7 @@
 
         })
 
-    </script>
+    </script>--->
 
 </body>
 </html>
