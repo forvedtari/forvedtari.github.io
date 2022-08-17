@@ -10,6 +10,7 @@
     bottom: 0;
     width: 300px;    
     padding: 0 15px;
+    z-index: 1;
     background: #040b14;
 }
 
@@ -93,7 +94,8 @@ i:hover {
     display: inline;
     background: #212431;
     color: #fff;
-    margin-top: 1rem;
+    
+    margin-top: 16px;
     padding: 6px 0;
     margin-right: 4px;
     border-radius: 50%;
@@ -115,16 +117,14 @@ i:hover {
         z-index: 9998;
         border: 0;
         font-size: 24px;
-        
-        outline: none;
+        transition: all 0.4s;
+        outline: none !important;
         background-color: #149ddd;
         color: #fff;
         float: right;
         width: 40px;
         height: 40px;
         display:none;
-    
-    
         align-items: center;
         justify-content: center;
         line-height: 0;
@@ -138,7 +138,7 @@ section{
     padding: 60px 0;
     overflow: hidden;
 }
-.flex-hero{
+.d-hero{
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -149,21 +149,12 @@ section{
     
     width: 100%;
     height:100vh;
-    background: url("wallpaper.jpg");
+    background: url("C:\\Users\\ZMO-WIN-VedantiT-01\\Downloads\\wallpaper.jpg");
     background-size: cover;
     background-attachment: fixed;
 
 }
-/*#hero::before{
-    content: "";
-    background: rgba(5, 13, 24, 0.3);
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-}*/
+
 #main{
     margin-left: 300px;
 }
@@ -205,6 +196,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h3{ 
     padding-left: 40px;
+    font-size: 20px;
     color:#173b6c;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -214,15 +206,34 @@ h3{
 .pt-lg-0{
    padding-top: 0px;
 }
+/*===================About==============================================================================================*/
 #about .container ul li {
    padding: 0%;
     margin-bottom: 20px;
     display: flex;
     align-items: center;
+
+}
+#about .container .col-4{
+    width:300px
+
+}
+
+#about .container .col-8 {
+    width:700px;
+
 }
 #about strong{
+    font-size: 20px;
     font-weight: bolder;
     margin-right: 5px;
+}
+#about ul  span{
+    font-size: 20px;
+}
+#about .col-8 p{
+    padding-left: 40px;
+
 }
 
 #fact-col{
@@ -234,19 +245,25 @@ h3{
     width: 100%;
 }
 .facts .fact-box span{
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 700;
     color: #050d18;
     
 }
 .facts .fact-box p{
     color: #050d18;
-    font-size: 14px;
+    font-size: 20px;
     padding-top: 15px;
+
+    
     margin:0 0 0 60px
     
 }
+.facts .fact-box strong{
+    padding-left: 15px;
+}
 /*=========================Skills====================*/
+
 .progress-container{
     display:flex;
     
@@ -301,12 +318,47 @@ h3{
     width:50%;
 
 }
+
+/*.skills .progresbar{
+    height: 60px;
+    width: 100%;
+}
+.skills .skill{
+    margin: 0,0,6px,10px;
+    font-weight: 600;
+}
+.d-progressbar{
+    background: #dce8f8;
+    height: 10px;
+}
+
+.skills .bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #149ddd;
+}
+.bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    
+    text-align: center;
+    white-space: nowrap;
+    
+   
+}
 /*==========================================resume===========================*/
 .Resume em{
     margin-left: 10px;
 }
 .res-act{
-    margin-left: 14px;
+    margin-left: 8px;
     border-left: 4px solid rgb(64, 145, 238);
 }
 .res-act p{
@@ -314,6 +366,11 @@ h3{
 }
 .Resume span{
     font-size: 20px;
+}
+.resume-content i{
+    color: #ffffff;
+    border:3px solid rgb(64, 145, 238);
+    border-radius: 50%;
 }
 .Resume li{
     padding: 0 0 10px 0;
@@ -344,25 +401,24 @@ h3{
     display: flex;
     justify-content: center;
 }
-.portfolio a:hover{
-    color: #149ddd;
-}
+
 .portfolio .portfolio-image-container{
     display: flex;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
 }
 .portfolio .portfolio-image-container .image__img{
     display: block;
-    width :400px;
-    height:260px;
+    width :370px;
+    height:250px;
     
 }
 .overlay__img{
     position: absolute;
     left:0;
     bottom:0;
-    width:400px;
+    width:370px;
     height:40px;
     background: rgba(115, 204, 242, 0.6);
     color:#f1f1f1;
@@ -372,25 +428,28 @@ h3{
     justify-content: space-around;
     opacity: 0;
 }
-.overlay__img:hover{
+.image:hover .overlay__img{
     opacity:1;
 }
   
 .image{
     position: relative;
-    margin: 20px;
+    
     padding: 10px;
 }
 
 
 /*====================================================services================*/
+.service-items{
+    margin-top: 20px;
+}
 .services .service-items .service-box{
-    width:300px;
+    width:400px;
     height: 200px;
     padding-left: 25px;
     padding-right: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    /*margin-left: 20px;
+    margin-right: px;*/
 }
 .services i{
     background-color: rgb(39, 144, 237);
@@ -401,12 +460,14 @@ h3{
     align-items: center;
     display: flex;
     float: left;
+    
 }
 .services .service-items .service-box h4{
     font-size: 20px;
-    padding-left: 10px;
+    padding-left: 60px;
     margin-bottom: 5px;
     margin-top: 0px;
+    
 }
 .service-items{
     display: flex;
@@ -418,55 +479,55 @@ h3{
     padding-left: 60px;
     margin-top: 10px;
 }   
+.service-box .serv-text{
+    margin-left: 20px;
+
+}
 /*==================================testimonial======================================*/
-
-
-.testimonial-item{
-    transition: all .3s ease-in-out;
-    transform: scale(0.9);
-    opacity: 0.9;
+.testi-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.testimonial{
+    position: relative;
+    max-width:800px;
+    width:100%;
+    overflow: hidden;
     
 }
 .avatar{
     display: flex;
     justify-content: center;
-    
 }
-.testimonial-box {
-    padding: 75px 50px 75px;
-    overflow:hidden;
-    width: 300px;
-    background: #f5f6fa;
-    border: 1px solid #f1f1f1;
-    border-radius :10px;
-    text-align: center;
+.testimonial .slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
 }
-.text-before i{
-    color: #75c0e3;
-}
-.text-before i:hover{
-    color: #75c0e3;
-}
-.testimonials-carousel .swipper-slide{
-    padding: 30px 0;
 
-}
-.avatar{
-    position: absolute;
-    left: 50%;
-    margin-left: -45px;
-
-}
 .avatar img{
+
     width: 90px;
     height:90px;
+    margin-top: 30px;
     border-radius: 100%;
     box-shadow: 0 9px 26px rgba(58,87,135,0.1);
 }
-.swipper-wrap{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.testimonial p{
+    margin-top: 20px;
+    padding-top: 40px;
+    text-align: center;
+}
+.back{
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+.slide .quate-icon i{
+    color: #149ddd;
+
 }
 /*==================================contact===========================================*/
 .contact .contact-container{
@@ -536,7 +597,7 @@ form .but-container{
 
 /*==============================================================responsive header======================================*/
 
-@media(max-width :1024px){
+@media(max-width :1178px){
     .header{
         max-width: 300px;
         display: none;
@@ -561,9 +622,54 @@ form .but-container{
     .passport-pic{
         margin: 8px 40px;
     }
+    .portfolio .portfolio-image-container .image__img{
+        width:300px
+    }
+    
     .progress-container{
         flex-wrap: wrap;
     }
+
+}
+@media(max-width :770px){
+    .about-image{
+        margin-left: 120px;
+
+    }
+    .contact .card{
+        margin-left:20px
+    }
+    .swipper-wrap{
+        justify-content: center;
+    }
+    h3{
+        font-size: 30px;
+        padding-left: 5px;
+    }
+    #about ul{
+        padding-left: 0%;
+    }
+    #about .col-8 p{
+        padding-left: 0%;
+    }
+}
+@media(max-width :410px)
+{
+    .about-image{
+        margin-left: 25px;
+
+    }
+    .contact .card{
+        margin-left:20px
+    }
+    .overlay__img{
+    
+    }
+
+
+
+
+
 
 }
 
