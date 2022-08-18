@@ -13,6 +13,9 @@
     z-index: 1;
     background: #040b14;
 }
+body{
+    margin:0px
+}
 
  ::before,::after{
     box-sizing: border-box;
@@ -92,19 +95,28 @@ i:hover {
     box-sizing: border-box;
     font-size: 18px;
     display: inline;
-    background: #212431;
+    background: #383b47;
     color: #fff;
     
-    margin-top: 16px;
-    padding: 6px 0;
-    margin-right: 4px;
+    margin-top: 10px;
+    padding: 8px 0 2px 6px;
+    margin-right: 8px;
+    
     border-radius: 50%;
     text-align: center;
-    width: 36px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
 
     
 }
+.social-links a:hover{
+    background: #fff;
+    color: #149ddd;
+}
+.nav-menu li:hover .nav-i{
+    color: aqua;
+}
+
 .menu-button{
     display: flex;
     justify-content: flex-end;
@@ -117,8 +129,8 @@ i:hover {
         z-index: 9998;
         border: 0;
         font-size: 24px;
-        
-        outline: none ;
+        transition: all 0.4s;
+        outline: none !important;
         background-color: #149ddd;
         color: #fff;
         float: right;
@@ -135,8 +147,12 @@ i:hover {
 
 div{display: block;}
 section{
-    padding: 60px 0;
+    padding: 60px  0 60px 10px;
     overflow: hidden;
+}
+ .skills,  .portfolio, .testimonials{
+    
+    background: #f5f8fd;
 }
 .d-hero{
     display:flex;
@@ -157,6 +173,10 @@ section{
 
 #main{
     margin-left: 300px;
+    
+}
+main{
+    min-height: calc(100vh - 509.6px - 60px);
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway", sans-serif;
@@ -215,7 +235,10 @@ h3{
 
 }
 #about .container .col-4{
-    width:300px
+    max-width: 400px;
+    width:300px;
+    display: flex;
+    
 
 }
 
@@ -389,13 +412,23 @@ h3{
     display: flex;
     flex-direction: row; 
     flex-wrap: nowrap;
-    background-color: rgb(251, 242, 242);
-    border-radius: 8px;
+    background-color:#fff;
+    border-radius: 15px;
     box-shadow: 0 2px,3px,0;
 }
 .portfolio li{
     margin-right: 10px;
     color: #040b14;
+}
+.portfolio a{
+    color: #040b14;
+}
+.portfolio a:hover{
+    color: #149ddd;
+
+}
+.portfolio ul{
+    padding: 0;
 }
 .portfolio-bar{
     display: flex;
@@ -407,23 +440,25 @@ h3{
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+
 }
 .portfolio .portfolio-image-container .image__img{
     display: block;
     width :370px;
     height:250px;
     
+    
 }
 .overlay__img{
     position: absolute;
     left:0;
     bottom:0;
-    width:370px;
+    width:95%;
     height:40px;
     background: rgba(115, 204, 242, 0.6);
     color:#f1f1f1;
-    padding:10px;
-    margin: 10px;
+    padding-top: 10px;
+   margin: 10px;
     display: flex;
     justify-content: space-around;
     opacity: 0;
@@ -434,8 +469,9 @@ h3{
   
 .image{
     position: relative;
-    
+    overflow: hidden;
     padding: 10px;
+   
 }
 
 
@@ -483,8 +519,15 @@ h3{
     margin-left: 20px;
 
 }
+.service-box:hover .serv-i{
+    background-color: #fff;
+    color: #149ddd;
+    border:1px solid #149ddd;
+}
 /*==================================testimonial======================================*/
 .testi-container{
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -492,7 +535,7 @@ h3{
 }
 .testimonial{
     position: relative;
-    max-width:800px;
+    margin:0,10px;
     width:100%;
     overflow: hidden;
     
@@ -507,12 +550,18 @@ h3{
     justify-content: center;
     flex-direction:column;
 }
+.slide .back:hover{
+    cursor: pointer;
+    padding-left: 30px ;
+    padding-right: 30px;
+}
 
 .avatar img{
 
     width: 90px;
     height:90px;
-    margin-top: 30px;
+    margin-top: 5px;
+    margin-bottom: 50px;
     border-radius: 100%;
     box-shadow: 0 9px 26px rgba(58,87,135,0.1);
 }
@@ -538,9 +587,9 @@ h3{
 .contact .card{
     margin-right: 30px;
     margin-top: 10px;
-    box-shadow: 0 0 5px 0 rgb(136, 132, 132);
+    box-shadow: 0 0 4px 0 rgb(136, 132, 132);
     padding: 20px;
-    border-radius: 5px
+   
 }
 .contact i{
     background-color: rgb(39, 144, 237);
@@ -575,6 +624,10 @@ h3{
     border:2px solid rgb(136, 132, 132,0.199);
     margin-top: 4px;
 }
+iframe{
+    width:350px ;
+    height:450px ;
+}
 form .but{
     
     border: none;
@@ -592,6 +645,72 @@ form .but{
 form .but-container{
     display: flex;
     justify-content: center;
+}
+/*===============================================Footer==============================================================*/
+
+footer .container{
+    width: 100%;
+    height: 60px;
+    background-color: #040b14;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.copyright  {
+    color: #fff;
+    text-align:center;
+    font-size: 15px;
+    
+}
+.designed{
+    margin-top: 4px;
+    margin-left: 10px;
+    text-align: center;
+    color: #f1f1f1;
+}
+.designed a{
+    display: inline;
+    padding: 0%;
+    color: rgb(53, 163, 237);
+    text-decoration: underline;
+    
+}
+.designed a:hover{
+    color: #fff;
+}
+/*==============================================================back-to-top==========================================*/
+.back-to-top{
+    position: fixed;
+       
+    right: 15px;
+    bottom: 15px;
+    z-index: 9998;
+    border: 0;
+    font-size: 24px;
+    transition: all 0.4s;
+    outline: none !important;
+    background-color: #149ddd;
+    color: #fff;
+    
+    width: 40px;
+    height: 40px;
+    display:none;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    border-radius: 50px;
+    cursor: pointer
+    
+}
+.back-to-top i{
+    
+    color: #fff;
+}
+.back-to-top a{
+    display: block;
+    padding: 0;
+    margin-top: 8px;
+    margin-left:10px;
 }
 
 
@@ -613,6 +732,9 @@ form .but-container{
         display:inline-flex;
         
     }
+    .back-to-top{
+        display: block;
+    }
     /*.row{
         flex-wrap: nowrap;
     }*/
@@ -633,7 +755,7 @@ form .but-container{
 }
 @media(max-width :770px){
     .about-image{
-        margin-left: 120px;
+       margin-left:120px;
 
     }
     .contact .card{
@@ -653,25 +775,33 @@ form .but-container{
         padding-left: 0%;
     }
 }
-@media(max-width :410px)
+@media(max-width :450px)
 {
     .about-image{
-        margin-left: 25px;
-
+        margin-left: 40px; 
     }
     .contact .card{
-        margin-left:20px
+        margin:20px
     }
-    .overlay__img{
+    .contact .map{
+        display: flex;
+        justify-content: center;
+
+    }
+    iframe{
+        
+        width: 260px;
+        height: 200px;
+    }
     
-    }
-
-
-
-
-
-
 }
+@media(max-width :350px)
+{
+    .about-image{
+        margin-left: 10px;
+    }
+}
+
 
 
 
