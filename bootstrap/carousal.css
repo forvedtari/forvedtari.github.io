@@ -1,0 +1,36 @@
+.navbar{
+    height: 50px;
+}
+.navbar-brand{
+    color:#fff;
+    
+}
+#navbarCollapse{
+    display: inline-flex;
+}
+
+
+
+
+
+
+
+.mg{
+    margin:0 3rem;
+}
+.heading-first{
+    font-weight: 400;
+    margin-top:6rem
+}
+.featurette-image{
+    font-size: 56px;
+}
+.col-lg-4{
+    text-align: center;
+    padding: 0 14px;
+}
+
+.divider{
+    margin: 5rem 0;
+}
+
