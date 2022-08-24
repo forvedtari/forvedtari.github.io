@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body >
+ <div class="container d-flex justify-content-center align-content-center p-4">
+<button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#Gallery">
+  Pop Up Gallery!
+</button>
+
+
+<div class="modal " id="Gallery"  aria-labelledby="Galley-title" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Galley-title">Gallery</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="imageGallery" class="carousel carousel-light slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#imageGallery" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#imageGallery" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#imageGallery" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active text-center" data-bs-interval="10000">
+              <img src="wallpaper.jpg" class="w-100" width="300" height="200" alt="slide-1">
+              <div class="carousel-caption text-start ">
+                
+              </div>
+            </div>
+            <div class="carousel-item text-center" data-bs-interval="10000">
+              <img src="landscape2.jpg"  class="w-100" width="300" height="200" alt="slide-2">
+              <div class="carousel-caption text-center">
+                
+              </div>
+            </div>
+            <div class="carousel-item text-center" data-bs-interval="10000">
+              <img src="landscape4.jpg"class="w-100"  width="300" height="200" alt="slide-3">
+              <div class="carousel-caption text-end">
+                
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#imageGallery" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#imageGallery" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+</div>
+ </div>
+   
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
