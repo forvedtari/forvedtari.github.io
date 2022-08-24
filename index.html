@@ -21,6 +21,10 @@
     <i class="fa-solid fa-bars fa-3x toggel_button" onclick="myfunction()" ></i>
     </div>
     </div>
+    <!---<input type="checkbox" id="checkbox_toggle" />
+       <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+       <label for="checkbox_toggle" class="fa-solid fa-x"></label>----->
+       
     <header id="header" class="header">
         <div id="flex_columnn">
             <div id="profile">
@@ -338,40 +342,40 @@
 
                 <div class="portfolio-bar">
                     <ul>
-                        <li><a href="#">ALL</a></li>
-                        <li><a href="#">APP</a></li>
-                        <li><a href="#">CARD</a></li>
-                        <li><a href="#">WEB</a></li>
+                        <li class="list " data-filter="All"><a  class=" p_text active">ALL</a></li>
+                        <li class="list" data-filter="App"><a  class=" p_text ">APP</a></li>
+                        <li class="list" data-filter="Card"><a class=" p_text ">CARD</a></li>
+                        <li class="list" data-filter="Web"><a  class=" p_text ">WEB</a></li>
                     </ul>
                 </div>
                 <div class="portfolio-image-container">
                     
-                    <div class="image">
-                    <img src="landscape1.jpg" class="image__img">
+                    <div class="image App ">
+                    <img src="landscape1.jpg" class="image__img ">
                     <div class="overlay__img"><i class="fa-solid fa-plus"></i><i class="fa-solid fa-link"></i></div>
                     
                     </div>
-                    <div class="image">
-                    <img src="landscape2.jpg" class="image__img">
+                    <div class="image Card">
+                    <img src="landscape2.jpg" class="image__img ">
                     <div class="overlay__img"><i class="fa-solid fa-plus"></i><i class="fa-solid fa-link"></i></div>
                     
                     </div>
-                    <div class="image">
-                    <img src="landscape3.jpg" class="image__img">
+                    <div class="image Web">
+                    <img src="landscape3.jpg" class="image__img ">
                     <div class="overlay__img"><i class="fa-solid fa-plus"></i><i class="fa-solid fa-link"></i></div>
                     
                     </div>
-                    <div class="image">
+                    <div class="image  App">
                     <img src="landscape4.jpg" class="image__img">
                     <div class="overlay__img"><i class="fa-solid fa-plus"></i><i class="fa-solid fa-link"></i></div>
                     
                     </div>
-                    <div class="image">
-                        <img src="landscape1.jpg" class="image__img">
+                    <div class="image Card">
+                        <img src="landscape1.jpg" class="image__img ">
                         <div class="overlay__img"><i class="fa-solid fa-plus"></i><i class="fa-solid fa-link"></i></div>
                         
                         </div>
-                        <div class="image">
+                        <div class="image Web">
                             <img src="landscape2.jpg" class="image__img">
                             <div class="overlay__img"><i class="fa-solid fa-plus"></i><i class="fa-solid fa-link"></i></div>
                             
@@ -625,23 +629,36 @@
             </div>
         </div>
     </footer>
+
     <div class="back-to-top"><a href="#"><i class="fa-solid fa-arrow-up"></i></a></div>
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
-    <!-----<script>
-        var menu_toggel = document.querySelector('.toggel_button');
-        var header = document.querySelector('.header');
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script >
+        $(document).ready(function(){
+            $('.list').click(function(){
+                const value = $(this).attr('data-filter');
+                if(value == 'All'){
+                    $('.image').show('1000');
 
-        menu_toggel.addEventListener('click',()=>{
-            
-            header.classList.add("is-active");
+                }
+                else{
+                    $('.image').not('.' + value).hide('1000');
+                    $('.image').filter('.' + value).show('1000');
 
+                }
+            })
+            $('.p_text').click(function(){
+                $('.p_text').removeClass('active');
+                $(this).addClass('active');
+            })
         })
-
-    </script>--->
-
+    </script>
 </body>
 
 </html>
