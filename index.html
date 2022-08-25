@@ -11,6 +11,7 @@
       rel="stylesheet"
       href="css/swiper-bundle.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.css" />
 
     <title>Portfolio</title>
@@ -39,22 +40,22 @@
                 <a href="https://in.linkedin.com/" title="Linked In" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
             <nav id="nav-bar" class="nav-menu">
-                <ul>
+                <ul class="nav_ul">
                 
                     <li>
-                        <a href="#hero"><i class="fa-solid fa-house nav-i"></i><span>Home</span></a>
+                        <a href="#hero" class=" mh mi active"><i class="fa-solid fa-house nav-i"></i><span>Home</span></a>
                     </li>
                 
                     <li>
-                        <a href="#about"><i class="fa-solid fa-user nav-i"></i><span>About</span></a>
+                        <a href="#about" class="mh mi"><i class="fa-solid fa-user nav-i"></i><span>About</span></a>
                     </li><li>
-                        <a href="#resume"><i class="fa-solid fa-file nav-i" ></i><span>Resume</span></a>
+                        <a href="#resume" class="mh mi"><i class="fa-solid fa-file nav-i" ></i><span>Resume</span></a>
                     </li><li>
-                        <a href="#portfolio"><i class="fa-solid fa-book nav-i"></i><span>Portfolio</span></a>
+                        <a href="#portfolio" class="mh mi"><i class="fa-solid fa-book nav-i"></i><span>Portfolio</span></a>
                     </li><li>
-                        <a href="#services"><i class="fa-solid fa-server nav-i"></i><span>Services</span></a>
+                        <a href="#services" class="mh mi"><i class="fa-solid fa-server nav-i"></i><span>Services</span></a>
                     </li><li>
-                        <a href="#contact"><i class="fa-solid fa-envelope nav-i"></i><span>Contact</span></a>
+                        <a href="#contact" class="mh mi"><i class="fa-solid fa-envelope nav-i"></i><span>Contact</span></a>
                     </li>
                 </ul>
             </nav>
@@ -63,7 +64,7 @@
         
 
     </header>
-    <section id="hero" class="d-hero">
+    <section id="hero" class="d-hero reen">
      
         <div class="hero-section">
             <h1><strong>Vedanti Tari</strong></h1>
@@ -72,7 +73,7 @@
     </section>
     <main id="main">
         
-        <section id="about">
+        <section id="about" class="reen">
             <div class="container">
                 <div class="section-title">
                     <h2>
@@ -81,10 +82,10 @@
                     <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
                 </div>
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-4" data-aos="fade-right" data-aos-duration="3000">
                         <img src="icon.png" class="about-image">
                     </div>
-                    <div class="col-8" >
+                    <div class="col-8" data-aos="fade-left" data-aos-duration="3000">
                         <h3>UI/UX Designer & Web Developer.</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eos laudantium vitae iure totam explicabo, eius saepe fugiat ipsa obcaecati! Neque alias molestias voluptate facere ab repudiandae eos blanditiis repellat!</p>
                         <div class="row">
@@ -112,7 +113,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-6">
+                            <div class="col-6" >
                                     <ul>
                                         <li style="list-style-type: none;">
                                             <i class="fa-solid fa-angle-right" style="color: rgb(80, 172, 247);"></i>
@@ -157,7 +158,7 @@
                 <div class="row">
                     <div class="col-6 " id="fact-col" >
 
-                        <div class="fact-box" style="padding: 30px;">
+                        <div class="fact-box" style="padding: 30px;" data-aos="fade-up" data-aos-duration="3000">
                             <i class="fa-solid fa-face-smile fa-4x" ></i>
                             <span>232</span>
                             <p>
@@ -168,7 +169,7 @@
                     </div>
                     <div class="col-6 " id="fact-col" >
                         
-                        <div class="fact-box" style="padding: 30px;">
+                        <div class="fact-box" style="padding: 30px;" data-aos="fade-up" data-aos-duration="3000" >
                             <i class="fa-solid fa-file-lines fa-4x"></i>
                             <span>521</span>
 
@@ -180,7 +181,7 @@
                     </div>
                     <div class="col-6" id="fact-col" >
                         
-                        <div class="fact-box" style="padding: 30px;">
+                        <div class="fact-box" style="padding: 30px;" data-aos="fade-up" data-aos-duration="3000">
                             <i class="fa-solid fa-headset fa-4x" ></i>
                             <span>1453</span>
                             <p>
@@ -191,7 +192,7 @@
                     </div>
                     <div class="col-6 " id="fact-col" >
                         
-                        <div class="fact-box" style="padding: 30px;">
+                        <div class="fact-box" style="padding: 30px;" data-aos="fade-up" data-aos-duration="3000">
                             <i class="fa-solid fa-user-group fa-4x" ></i>
                             <span>32</span>
                             <p>
@@ -203,7 +204,7 @@
                 </div>
             </div>
         </section>
-        <section class="skills">
+        <section class="skills ">
             <div class="container">
                 <div class="section-title">
                     <h2>
@@ -259,7 +260,7 @@
             </div>
 
         </section>
-        <section class="Resume" id="resume">
+        <section class="Resume reen" id="resume">
             <div class="container">
                 <div class="section-title">
                     <h2>
@@ -268,7 +269,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod vel optio est excepturi neque, ipsa quo id. Totam minus blanditiis, beatae officiis maxime inventore error ad, rem porro eius ipsa.</p>
                 </div>
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-6" data-aos="fade-up" data-aos-duration="3000">
                         
                         <h3>Summary</h3>
                         <div class="resume-content">
@@ -307,7 +308,7 @@
                         </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="3000">
                         
                         <h3>Professional Experience</h3>
                         <div class="resume-content">
@@ -331,7 +332,7 @@
                 </div>
            </div>
         </section>
-        <section class="portfolio" id="portfolio">
+        <section class="portfolio reen" id="portfolio">
             <div class="container">
                 <div class="section-title">
                     <h2>
@@ -340,7 +341,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod vel optio est excepturi neque, ipsa quo id. Totam minus blanditiis, beatae officiis maxime inventore error ad, rem porro eius ipsa.</p>
                 </div>
 
-                <div class="portfolio-bar">
+                <div class="portfolio-bar" data-aos="fade-up" data-aos-duration="1500">
                     <ul>
                         <li class="list " data-filter="All"><a  class=" p_text active">ALL</a></li>
                         <li class="list" data-filter="App"><a  class=" p_text ">APP</a></li>
@@ -348,7 +349,7 @@
                         <li class="list" data-filter="Web"><a  class=" p_text ">WEB</a></li>
                     </ul>
                 </div>
-                <div class="portfolio-image-container">
+                <div class="portfolio-image-container" data-aos="fade-up" data-aos-duration="1500" >
                     
                     <div class="image App ">
                     <img src="landscape1.jpg" class="image__img ">
@@ -385,7 +386,7 @@
                 </div>
             
         </section>
-        <section class="services" id="services">
+        <section class="services reen" id="services">
             <div class="container">
                 <div class="section-title">
                     <h2>
@@ -394,7 +395,7 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam obcaecati perspiciatis quasi quaerat libero, perferendis aperiam distinctio fugiat ex quas recusandae ipsum molestias? In, ipsam recusandae quia error repellat voluptatibus.</p>
                 </div>
                 <div class="service-items">
-                    <div class="service-box" >
+                    <div class="service-box" data-aos="fade-up" data-aos-duration="3000">
                         <i class="fa-solid fa-briefcase fa-2x serv-i"></i>
                         <div class="serv-text">
                         <h4>LOREM IPSEN</h4>
@@ -405,7 +406,7 @@
                        </div>
                     </div>
                     
-                    <div class="service-box">
+                    <div class="service-box" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">
                             <i class="fa-solid fa-list-check fa-2x serv-i"></i>
                             <div class="serv-text">
                             <h4>DOLORA SITEMA</h4>
@@ -415,7 +416,7 @@
                             </p>
                         </div>
                         </div>
-                    <div class="service-box">
+                    <div class="service-box"  data-aos="fade-up" data-aos-duration="3000" data-aos-delay="400">
                             <i class="fa-solid fa-chart-simple fa-2x serv-i"></i>
                             <div class="serv-text">
                             <h4>SED UT</h4>
@@ -425,7 +426,7 @@
                             </div>
                         </div>
                     
-                    <div class="service-box">
+                    <div class="service-box"  data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500">
                             <i class="fa-solid fa-binoculars fa-2x serv-i"></i>
                             <div class="serv-text">
                             <h4>MAGNI DOLORES</h4>
@@ -435,7 +436,7 @@
                             </p>
                             </div>
                         </div>
-                        <div class="service-box">
+                        <div class="service-box"  data-aos="fade-up" data-aos-duration="3000" data-aos-delay="600">
                             <i class="fa-solid fa-sun fa-2x serv-i"></i>
                             <div class="serv-text">
                             <h4>NEMO ENIM</h4>
@@ -445,7 +446,7 @@
                             </p>
                             </div>
                         </div>
-                        <div class="service-box">
+                        <div class="service-box"  data-aos="fade-up" data-aos-duration="3000" data-aos-delay="700">
                             <i class="fa-solid fa-calendar fa-2x serv-i"></i>
                             <div class="serv-text">
                             <h4>EIUSMOD TEMPOR</h4>
@@ -472,7 +473,7 @@
                 <div class="testi-container">
                 <div class="testimonial mySwiper">
                     <div class="testi-content swiper-wrapper">
-                        <div class="slide swiper-slide">
+                        <div class="slide swiper-slide"  data-aos="fade-up" data-aos-duration="1500" >
                             <div class="back">
                                <div class="quate-icon"><i class="fa-solid fa-quote-left fa-2x" style="float: left;"></i></div>
                                    <p>
@@ -483,7 +484,7 @@
                             </div>
                                <div class="avatar"><img src="testimonial-pic2.jpg" alt=""></div>
                         </div> 
-                        <div class="slide swiper-slide">
+                        <div class="slide swiper-slide"  data-aos="fade-up" data-aos-duration="1500">
                             <div class="back">
                                <div class="quate-icon"><i class="fa-solid fa-quote-left fa-2x" style="float: left;"></i></div>
                                    <p>
@@ -494,7 +495,7 @@
                             </div>
                                <div class="avatar"><img src="testimonial-pic3.jpg" alt=""></div>
                         </div> 
-                        <div class="slide swiper-slide">
+                        <div class="slide swiper-slide"  data-aos="fade-up" data-aos-duration="1500">
                             <div class="back">
                                <div class="quate-icon"><i class="fa-solid fa-quote-left fa-2x" style="float: left;"></i></div>
                                    <p>
@@ -505,7 +506,7 @@
                             </div>
                                <div class="avatar"><img src="testimonial-pic1.jpg" alt=""></div>
                         </div> 
-                        <div class="slide swiper-slide">
+                        <div class="slide swiper-slide"  data-aos="fade-up" data-aos-duration="1500">
                             <div class="back">
                                <div class="quate-icon"><i class="fa-solid fa-quote-left fa-2x" style="float: left;"></i></div>
                                    <p>
@@ -516,7 +517,7 @@
                             </div>
                                <div class="avatar"><img src="testimonial-pic2.jpg" alt=""></div>
                         </div> 
-                        <div class="slide swiper-slide">
+                        <div class="slide swiper-slide"  data-aos="fade-up" data-aos-duration="1500">
                             <div class="back">
                                <div class="quate-icon"><i class="fa-solid fa-quote-left fa-2x" style="float: left;"></i></div>
                                    <p>
@@ -527,7 +528,7 @@
                             </div>
                                <div class="avatar"><img src="testimonial-pic3.jpg" alt=""></div>
                         </div> 
-                        <div class="slide swiper-slide">
+                        <div class="slide swiper-slide"  data-aos="fade-up" data-aos-duration="1500">
                             <div class="back">
                                <div class="quate-icon"><i class="fa-solid fa-quote-left fa-2x" style="float: left;"></i></div>
                                    <p>
@@ -540,7 +541,7 @@
                         </div> 
                     </div>
                     
-                    <div class="swiper-pagination" style="margin: top 10px;"></div>
+                    <div class="swiper-pagination" style="margin: top 10px;"  data-aos="fade-up" data-aos-duration="1500"></div>
                     
                 </div>
                 
@@ -555,7 +556,7 @@
             
 
         </section>
-        <section class="contact">
+        <section class="contact reen" id="contact">
             <div class="container">
                 <div class="section-title">
                     <h2>
@@ -637,7 +638,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script >
         $(document).ready(function(){
@@ -657,8 +661,34 @@
                 $('.p_text').removeClass('active');
                 $(this).addClass('active');
             })
+
+            $('.mi').click(function(){
+                $('.mi').removeClass('active');
+                $(this).addClass('active');
+            })
         })
     </script>
+    <script>
+       $(window).scroll(function () {
+                var distance = $(window).scrollTop();
+                
+               
+                $('.reen').each(function (i) {
+  
+                    if ($(this).position().top 
+                        <= distance +300 ) {
+                          
+                            $('.nav_ul a.active')
+                                .removeClass('active');
+  
+                            $('.nav_ul a').eq(i)
+                                .addClass('active');
+                    }
+                });
+            }).scroll();
+     
+    </script>
+
 </body>
 
 </html>
