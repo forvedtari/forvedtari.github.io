@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 #header
@@ -10,7 +11,7 @@
     bottom: 0;
     width: 300px;    
     padding: 0 15px;
-    z-index: 1;
+    z-index: 3;
     background: #040b14;
 }
 body{
@@ -34,8 +35,7 @@ h1{
   text-align: center;
   font-size: 24px;
   font-family: Arial, Helvetica, sans-serif;
-  margin-block-start: 0.67em;
-  margin-block-end: 0.67em;
+  
 
 }
 #nav-bar{
@@ -47,6 +47,14 @@ h1{
     padding: 30px 0 0 0;
     margin-bottom: 8px;
     font-size: 15px;
+}
+.nav-menu ul li a.active .nav-i{
+    color: aqua;
+
+}
+.nav-menu ul li a.active span{
+    color: aqua;
+
 }
 .nav-menu i{
   padding-right: 8px ;
@@ -60,6 +68,7 @@ a{
     padding: 12px 15px;
     display: flex;
     align-items: center;
+    
 
 } 
 
@@ -82,6 +91,8 @@ i:hover {
     cursor:pointer;
     color: rgb(68, 172, 242);
     text-decoration: none;
+   
+
     
 
 }
@@ -144,6 +155,35 @@ i:hover {
         cursor: pointer
 
 }
+/*.hamburger{
+    position: fixed;
+        right: 15px;
+        top: 15px;
+        z-index: 9998;
+        font-size: 30px;
+        text-align: center;
+        color: #fff;
+        background-color: #149ddd;
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+}
+.fa-x{
+    position: fixed;
+        right: 15px;
+        top: 15px;
+        z-index: 9998;
+        font-size: 30px;
+        text-align: center;
+        color: #fff;
+        background-color: #149ddd;
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+
+}*/
+
+
 
 div{display: block;}
 section{
@@ -326,7 +366,8 @@ h3{
     background-color: #149ddd;
 }
 .skill .bar .html{
-    width:60%;
+    width:2%;
+   
 
 }
 .skill .bar .css{
@@ -342,40 +383,7 @@ h3{
 
 }
 
-/*.skills .progresbar{
-    height: 60px;
-    width: 100%;
-}
-.skills .skill{
-    margin: 0,0,6px,10px;
-    font-weight: 600;
-}
-.d-progressbar{
-    background: #dce8f8;
-    height: 10px;
-}
 
-.skills .bar{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow: hidden;
-    color: #fff;
-    text-align: center;
-    white-space: nowrap;
-    background-color: #149ddd;
-}
-.bar{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow: hidden;
-    
-    text-align: center;
-    white-space: nowrap;
-    
-   
-}
 /*==========================================resume===========================*/
 .Resume em{
     margin-left: 10px;
@@ -426,6 +434,9 @@ h3{
 .portfolio a:hover{
     color: #149ddd;
 
+}
+.portfolio-bar  a.active{
+    color:#149ddd
 }
 .portfolio ul{
     padding: 0;
@@ -527,17 +538,18 @@ h3{
 /*==================================testimonial======================================*/
 .testi-container{
     width: 100%;
+   overflow: hidden;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+   
 }
 .testimonial{
     position: relative;
+    z-index: 1;
     margin:0,10px;
     width:100%;
-    overflow: hidden;
     
 }
 .avatar{
@@ -732,6 +744,17 @@ footer .container{
         display:inline-flex;
         
     }
+
+    /*input[type=checkbox]:checked ~ .header{
+        display: inline-flex;
+       }
+    #checkbox_toggle ~ label ::before{
+        content:'\f0c9'
+    }
+    #checkbox_toggel:checked ~ label::before{
+        content:'\f0aa'
+    }*/
+
     .back-to-top{
         display: block;
     }
@@ -775,8 +798,9 @@ footer .container{
         padding-left: 0%;
     }
 }
-@media(max-width :450px)
-{
+@media(max-width :450px){
+
+    
     .about-image{
         margin-left: 40px; 
     }
@@ -801,6 +825,24 @@ footer .container{
         margin-left: 10px;
     }
 }
+
+@keyframes prog{
+    0%{
+        width:1%;
+    }
+    20%{
+        width: 20%;
+    }
+    40%{
+        width: 40%;
+    }
+    60%{
+        width: 40%;
+    }
+
+}
+
+
 
 
 
