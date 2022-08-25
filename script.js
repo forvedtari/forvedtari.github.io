@@ -8,9 +8,9 @@ function myfunction(){
 }
 
       var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 10,
-        slidesPerGroup: 3,
+        
+        spaceBetween: 30,
+       
         loop: true,
         loopFillGroupWithBlank: true,
         pagination: {
@@ -21,5 +21,16 @@ function myfunction(){
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+        breakpoints:{
+          0:{
+            slidesPerView: 1
+          },
+          520:{
+            slidesPerView: 3
+          }
+        }
       });
+
+      
+
  
