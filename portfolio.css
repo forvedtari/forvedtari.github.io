@@ -1,6 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 *{
     box-sizing: border-box;
     scroll-behavior: smooth;
+    
+
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.myname{
+    margin-left: 70px;
+    font-size: 60px;
+    font-weight: 200;
+    font-family: 'Pacifico', cursive;
+    
+}
+.myHobbies{
+    margin-top: 20px !important;
+    margin-left: 120px;
+    font-size: 30px;
+    font-weight: 200;
+    color :white     
+}
+#profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #header
@@ -25,9 +53,9 @@ body{
     height: 120px;
     width: 120px;
     border-radius:50%;
-    border: 5px solid black;
-    vertical-align: middle;
+    /* border: 5px solid black; */
     margin: 8px 75px;
+    box-shadow: 1px 1px 8px 1px #f9efef;
 }
 h1{
   color: aliceblue;
@@ -35,8 +63,11 @@ h1{
   text-align: center;
   font-size: 24px;
   font-family: Arial, Helvetica, sans-serif;
-  
 
+}
+.newnav{
+    display: flex;
+    justify-content: center;
 }
 #nav-bar{
     position: relative;
@@ -44,8 +75,11 @@ h1{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 0 0 0;
+    padding: 30px 50px 0 0;
     margin-bottom: 8px;
+    font-size: 15px;
+}
+.nav_ul span{
     font-size: 15px;
 }
 .nav-menu ul li a.active .nav-i{
@@ -366,7 +400,7 @@ h3{
     background-color: #149ddd;
 }
 .skill .bar .html{
-    width:2%;
+    width:60%;
    
 
 }
@@ -410,6 +444,8 @@ h3{
     width: 80px;
     height:25px;
     margin-left: 20px;
+    border-radius: 10px;
+    padding-top: 5px;
     background-color: rgb(154, 180, 184);
     font-size: 15px;
     text-align: center;
@@ -551,22 +587,20 @@ h3{
     margin:0,10px;
     width:100%;
     
+    
 }
 .avatar{
     display: flex;
     justify-content: center;
 }
 .testimonial .slide{
+    
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction:column;
 }
-.slide .back:hover{
-    cursor: pointer;
-    padding-left: 30px ;
-    padding-right: 30px;
-}
+
 
 .avatar img{
 
@@ -578,11 +612,38 @@ h3{
     box-shadow: 0 9px 26px rgba(58,87,135,0.1);
 }
 .testimonial p{
+    width:300px;
     margin-top: 20px;
-    padding-top: 40px;
+    padding-top: 20px;
+    padding-left: .6rem;
+    padding-right: .4rem;
     text-align: center;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    
 }
+
+
+.testimonial p:hover{
+    white-space: normal;
+    
+} 
+
+.read_more{
+    display:flex;
+    justify-content: center;
+}
+.viewmore:hover{
+    cursor:pointer;
+}
+ 
+
+
+
 .back{
+    
     background: #f1f1f1;
     border-radius: 5px;
 }
@@ -841,6 +902,7 @@ footer .container{
     }
 
 }
+
 
 
 
