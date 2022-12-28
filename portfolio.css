@@ -12,6 +12,7 @@ body{
 }
 .myname{
     margin-left: 70px;
+    margin-bottom:0;
     font-size: 60px;
     font-weight: 200;
     font-family: 'Pacifico', cursive;
