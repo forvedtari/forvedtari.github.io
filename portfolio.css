@@ -56,8 +56,9 @@ body{
     width: 120px;
     border-radius:50%;
     /* border: 5px solid black; */
-    margin: 8px 75px;
+    margin: 40px 75px 8px 75px;
     box-shadow: 1px 1px 8px 1px #f9efef;
+     background-color: #fff;
 }
 h1{
   color: aliceblue;
@@ -79,7 +80,7 @@ h1{
     justify-content: space-between;
     padding: 30px 50px 0 0;
     margin-bottom: 8px;
-    font-size: 15px;
+    font-size: 20px;
 }
 .nav_ul span{
     font-size: 15px;
@@ -133,7 +134,7 @@ i:hover {
 
 }
 #social-links{
-    margin-right: 10px;
+    margin-left:15px;
     display: flex;
     flex-direction: row;
     justify-content: center;
