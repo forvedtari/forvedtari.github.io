@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width:100%;
+    height: 100vh;
+    background-image: url(Starter_files/Assets/Background.png);
+    object-fit: contain;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.newsletter{
+    width: 27em;
+    /* height: 35em; */
+    background-color: aliceblue;
+    border-radius: 15px;
+}
+.header{
+    width: 100% ;
+    height: 35%;
+    border-radius: 15px 15px 0 0;
+    background-image: url(Starter_files/Assets/Pattern.png);
+    background-color: #2F60FA;
+    background-size:cover;
+    color: aliceblue;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    padding:56px;
+}
+ .content{
+    padding: 30px;
+ }
+ .content p{
+    text-align: center;
+    font-size: 14px;
+ }
+ .email_input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    
+ }
+ input{
+    width:18em;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #bcc6d6;
+    background-color: #f2f5fa;
+}
+button{
+    width:7.5em;
+    padding: 10px;
+    border-radius: 6px;
+    margin-left: 5px;
+    border: none;
+    color: aliceblue;
+    background-color: #2F60FA;
+    font-weight: 500;
+}
+.underline{
+    margin-top: 10px;
+    color: #bcc6d6;
+    font-size: 14px;
+}
+.user_info{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    }
+.user_block{
+    
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+}
+.user_name{
+    padding-top: 5px;
+    font-weight: 700;
+}
+.testimonial{
+    text-align: center;
+    font-size:15px;
+    margin-top: 15px;
+    color: grey;
+}
+
+@media (max-width: 430px){
+ .newsletter{
+    width: 100%;
+    height: 100vh;
+    border-radius: 0px;
+ }
+ .header{
+    border-radius: 0px;
+ }
+    
+}
